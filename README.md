@@ -15,4 +15,5 @@ See the examples/usage folder for details.
 
 ## LICENSE
 Copyright 2019 Frank James
+
 Licensed under the MIT license.  See the license file for details.
