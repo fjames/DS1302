@@ -8,11 +8,11 @@ This library is for accessing the DS1302 Real-time clock module.  The specific m
 
 ## Usage
 
-See the [examples](usage) folder for details.
+See the examples/usage folder for details.
 
 ## Documentation
 
-See the [examples](usage) folder for details.
+See the examples/usage folder for details.
 
 ## LICENSE
 Copyright 2019 Frank James
