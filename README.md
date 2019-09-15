@@ -8,7 +8,7 @@ This library is for accessing the DS1302 Real-time clock module.  The specific m
 Particle-Argon
   
 ## Usage
-/*  Create an instance of DS1302  */
+// Create an instance of DS1302
 DS1302 RTC = DS1302(A2, A3, A4);
 
 /*  Create a DateTime variable  */
