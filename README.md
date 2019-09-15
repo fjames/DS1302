@@ -15,7 +15,6 @@ DS1302 RTC = DS1302(A2, A3, A4);
 DS1302::DateTime dateTime;
 
 Setup() {
-...
 /*
     The DS1302 has a battery backup.  The DateTime does not
     need to be set everytime.
@@ -34,7 +33,6 @@ Setup() {
 /*  Set the date, time and weekday  */
 dateTime = DS1302::DateTime(19, 9, 14, 21, 29, 0, 7);
 RTC.WriteDateTime(dateTime);
-...
 }
 
 loop()
