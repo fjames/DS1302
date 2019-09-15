@@ -8,7 +8,6 @@ This library is for accessing the DS1302 Real-time clock module.  The specific m
 Particle-Argon
   
 ## Usage
-<code>
 /*  Create an instance of DS1302  */
 DS1302 RTC = DS1302(A2, A3, A4);
 
@@ -48,7 +47,6 @@ loop()
     Log.print("Seconds: " + String(RTC.SecondsSinceMidnight()) + "\n");
     Log.print("Ram Read: " + String(RTC.ReadRam(31)) + "\n");
 }
-</code>
 
 ## Documentation
 See the examples/usage folder for details.
