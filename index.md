@@ -1,4 +1,4 @@
-<div style="background:#1E1E1E; font-size: -2pt;">
+<div style="background:#1E1E1E; font-size: -4pt;">
     <span style='color:#D4D4D4; '>&nbsp;&nbsp;</span>
     <span style='color:#9CDCFE; '>Log</span>
     <span style='color:#D4D4D4; '>.</span>
