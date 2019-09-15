@@ -14,6 +14,7 @@ DS1302 RTC = DS1302(A2, A3, A4);
 /*  Create a DateTime variable  */
 DS1302::DateTime dateTime;
 
+<code>
 Setup() {
 /*
     The DS1302 has a battery backup.  The DateTime does not
@@ -47,6 +48,7 @@ loop()
     Log.print("Seconds: " + String(RTC.SecondsSinceMidnight()) + "\n");
     Log.print("Ram Read: " + String(RTC.ReadRam(31)) + "\n");
 }
+</code>
 
 ## Documentation
 See the examples/usage folder for details.
