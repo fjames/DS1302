@@ -51,6 +51,7 @@ DS1302::DateTime DS1302::ReadDateTime()
     int commandReadYear = 0x8d;
     int commandReadMonth = 0x89;
     int commandReadDay = 0x87;
+    int commandReadWeekday = 0x8b;
 
     dateTime.hours = ReadByte(commandReadHours);
     dateTime.minutes = ReadByte(commandReadMinutes);
@@ -58,6 +59,7 @@ DS1302::DateTime DS1302::ReadDateTime()
     dateTime.year = ReadByte(commandReadYear);
     dateTime.month = ReadByte(commandReadMonth);
     dateTime.day = ReadByte(commandReadDay);
+    dateTime.weekday = ReadByte(commandReadWeekday);
 
     /*  Disable clock access  */
     digitalWrite(_enablePin, LOW);
@@ -112,7 +114,7 @@ void DS1302::WriteByte(int command, int data)
 
 /*  Set RTC Data  */
 /*  NOTE: hours must be in 24 hour format  */
-void DS1302::WriteDateTime(DateTime dateTime)
+void DS1302::WriteDateTime(DS1302::DateTime dateTime)
 {
     int commandWriteHours = 0x84;
     int commandWriteMinutes = 0x82;
@@ -120,6 +122,7 @@ void DS1302::WriteDateTime(DateTime dateTime)
     int commandWriteYear = 0x8c;
     int commandWriteMonth = 0x88;
     int commandWriteDay = 0x86;
+    int commandWriteWeekday = 0x8a;
 
     dateTime.hours = (dateTime.hours & 0x1f);     /*  Ensure the clock is in 24 hour mode  */
     dateTime.seconds = (dateTime.seconds & 0x7f); /*  Ensure clock hold is always disabled  */
@@ -130,6 +133,7 @@ void DS1302::WriteDateTime(DateTime dateTime)
     WriteByte(commandWriteYear, dateTime.year);
     WriteByte(commandWriteMonth, dateTime.month);
     WriteByte(commandWriteDay, dateTime.day);
+    WriteByte(commandWriteWeekday, dateTime.weekday);
 
     /*  Disable clock access  */
     digitalWrite(_enablePin, LOW);
@@ -143,20 +147,28 @@ int DS1302::SecondsSinceMidnight()
 
 void DS1302::WriteRam(int byte, int value)
 {
-    int commandWriteRam = 0xc0 + (byte * 2);
-    WriteByte(commandWriteRam, value);
+    if (byte >= 0 && byte <= 31 && value >= 0 && value <= 255)
+    {
+        int commandWriteRam = 0xc0 + (byte * 2);
+        WriteByte(commandWriteRam, value);
 
-    /*  Disable clock access  */
-    digitalWrite(_enablePin, LOW);
+        /*  Disable clock access  */
+        digitalWrite(_enablePin, LOW);
+    }
 }
 
 int DS1302::ReadRam(int byte)
 {
-    int commandReadRam = 0xc1 + (byte * 2);
-    int ramByte = ReadByte(commandReadRam);
+    int ramByte = 0;
 
-    /*  Disable clock access  */
-    digitalWrite(_enablePin, LOW);
+    if (byte >= 0 && byte <= 31)
+    {
+        int commandReadRam = 0xc1 + (byte * 2);
+        ramByte = ReadByte(commandReadRam);
+
+        /*  Disable clock access  */
+        digitalWrite(_enablePin, LOW);
+    }
 
     return ramByte;
 }

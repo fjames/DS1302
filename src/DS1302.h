@@ -23,10 +23,11 @@ public:
     int hours = 0;
     int minutes = 0;
     int seconds = 0;
+    int weekday = 1;
 
     /*  Constructors  */
     DateTime(){};
-    DateTime(int _year, int _month, int _day, int _hours, int _minutes, int _seconds)
+    DateTime(int _year, int _month, int _day, int _hours, int _minutes, int _seconds, int _weekday)
     {
       year = _year;
       month = _month;
@@ -34,6 +35,7 @@ public:
       hours = _hours;
       minutes = _minutes;
       seconds = _seconds;
+      weekday = _weekday;
     }
   };
 

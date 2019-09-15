@@ -1,4 +1,4 @@
-/*  Example usage for DS1302 RTC library by Frank James  */
+/*  Example usage for DS1302 RTC Module library by Frank James  */
 
 #include <DS1302.h>
 
@@ -20,13 +20,14 @@ void setup()
 {
   int year = 19;
   int month = 9;
-  int day = 10;
+  int day = 14;
   int hour = 17; // Must be in 24 hour format
   int minutes = 15;
   int seconds = 0;
+  int weekday = 7;
 
   /*  Set the RTC  */
-  dateTime = DS1302::DateTime(year, month, day, hour, minutes, seconds);
+  dateTime = DS1302::DateTime(year, month, day, hour, minutes, seconds, weekday);
   rtc.WriteDateTime(dateTime);
 
   /*
