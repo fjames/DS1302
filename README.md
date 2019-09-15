@@ -15,7 +15,7 @@ DS1302 RTC = DS1302(A2, A3, A4);
 /*  Create a DateTime variable  */
 DS1302::DateTime dateTime;
 
-<b>Setup()</b><br />
+<p><b>Setup()</b></p>
 /*
     The DS1302 has a battery backup.  The DateTime does not
     need to be set everytime.
