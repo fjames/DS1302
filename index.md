@@ -1,3 +1,4 @@
+<div style="background:#1E1E1Ef; font-size: 8.5pt;">
 <p style="background:#1E1E1Ef; font-size: 8.5pt;">
     <span style='color:#D4D4D4'>&nbsp;&nbsp;</span>
     <span style='color:#9CDCFE'>Log</span>
@@ -125,3 +126,4 @@
     <span style='color:#CE9178;'>&quot;</span>
     <span style='color:#D4D4D4;'>);</span></p>
 </p>
+</div>
