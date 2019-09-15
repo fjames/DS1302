@@ -1,4 +1,4 @@
-<div style="background:#1E1E1E; font-size: 8.5pt;">
+<div style="background:#1E1E1E; font-size: 9pt;">
     <span style='color:#D4D4D4'>&nbsp;&nbsp;</span>
     <span style='color:#9CDCFE'>Log</span>
     <span style='color:#D4D4D4'>.</span>
@@ -31,7 +31,7 @@
     <span style='color:#CE9178'>&quot;</span>
     <span style='color:#D4D4D4'>);</span>
 </div>
-<div style="background:#1E1E1E; font-size: 8.5pt;">
+<div style="background:#1E1E1E; font-size: 9pt;">
     <span style='color:#D4D4D4;'>&nbsp;&nbsp;</span>
     <span style='color:#9CDCFE;'>Log</span>
     <span style='color:#D4D4D4;'>.</span>
@@ -66,7 +66,7 @@
     <span style='color:#CE9178;'>&quot;</span>
     <span style='color:#D4D4D4;'>);</span>
 </div>
-<div style='background:#1E1E1E; font-size: 8.5pt;'>
+<div style='background:#1E1E1E; font-size: 9pt;'>
     <span style='color:#D4D4D4;'>&nbsp;&nbsp;</span>
     <span style='color:#9CDCFE;'>Log</span>
     <span style='color:#D4D4D4;'>.</span>
@@ -85,7 +85,7 @@
     <span style='color:#CE9178;'>&quot;</span>
     <span style='color:#D4D4D4;'>);</span>
 </div>
-<div style='background:#1E1E1E; font-size: 8.5pt;'>
+<div style='background:#1E1E1E; font-size: 9pt;'>
     <span style='color:#D4D4D4;'>&nbsp;&nbsp;</span>
     <span style='color:#9CDCFE;'>Log</span>
     <span style='color:#D4D4D4;'>.</span>
@@ -104,7 +104,7 @@
     <span style='color:#CE9178;'>&quot;</span>
     <span style='color:#D4D4D4;'>);</span>
 </div>
-<div style='background:#1E1E1E; font-size: 8.5pt;'>
+<div style='background:#1E1E1E; font-size: 9pt;'>
     <span style='color:#D4D4D4;'>&nbsp;&nbsp;</span>
     <span style='color:#9CDCFE;'>Log</span>
     <span style='color:#D4D4D4;'>.</span>
